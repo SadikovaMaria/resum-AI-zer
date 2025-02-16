@@ -21,13 +21,13 @@ After the description in Russian, below is a full description in English...
  
 5. Для классификации датасета с резюме использован ChatGPT, в результате получен CSV-файл со столбцами: 'Category' (специальность соискателя), 'Resume' (текст резюме) и 'Label' (метка класса от 0 до 6). 
 6. Для работы с датасетом была выбрана нейросетевая модель [BERT](https://github.com/google-research/bert), но сразу же выявилось ограничение: "The BERT model can process texts of the maximal length of 512 tokens (roughly speaking tokens are equivalent to words)".
-7. Поэтому были исследованы другие решения, например [BELT](https://github.com/mim-solutions/bert_for_longer_texts) (BERT For Longer Texts).
+7. Поэтому были исследованы другие решения, например [BELT](https://github.com/mim-solutions/bert_for_longer_texts) (BERT For Longer Texts) и [ModernBert](https://unfoldai.com/modernbert/).
 
 ### Содержание репозитория
 В репозитории 3 ноутбука:
 - **Prepare_resume_dataset.ipynb** - в данном ноутбуке мы готовим себе датасет для дальнейшей работы.
 - **Analyze_dataset_with_resume.ipynb** - анализируем полученный выше датасет на сбалансированность классов, строим различные графики и т.п.
-- **BELT.ipynb** (пока в процессе)
+- **BELT.ipynb** 
 
 
 
