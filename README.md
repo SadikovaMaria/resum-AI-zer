@@ -29,8 +29,11 @@ After the description in Russian, below is a full description in English...
 - **Analyze_dataset_with_resume.ipynb** - анализируем полученный выше датасет на сбалансированность классов, строим различные графики и т.п.
 - **BELT.ipynb** - ноутбук подготовлен на основе примеров из репозитория [BELT](https://github.com/mim-solutions/bert_for_longer_texts). В данном ноутбуке  мы дообучаем BELT на нашем датасете и получаем accuracy в районе **0.64**.
 - **ModernBERT.ipynb** - ноутбук подготовлен на основе статьи [ModernBERT — A modernized BERT for NLP tasks](https://unfoldai.com/modernbert/) и примеров из репозитория [ModernBERT](https://unfoldai.com/modernbert/). В данном ноутбуке  мы дообучаем ModernBERT на нашем датасете и получаем accuracy в районе **0.63**.
-- **resumaizer.py** - телеграм-бот, который ожидает от пользователя резюме (в формате pdf), а в ответ выдает несколько рекомендаций по улучшению данного резюме. Телеграм-бот - это **интерфейс для взаимодействия с внешними пользователями**.
+- **resumaizer.py** - [телеграм-бот](https://t.me/HappyClients_bot), который ожидает от пользователя резюме (в формате pdf), а в ответ выдает несколько рекомендаций по улучшению данного резюме. Телеграм-бот - это **интерфейс для взаимодействия с внешними пользователями**. Мой бот размещён на хостинге [railway.com](railway.com).
 
+### Примечание
+Полученная невысокая точность модели (0,64), как мне кажется, обусловлена невысоким качеством исходного датасета. В датасете присутствует несбалансированность классов: данных, относящихся к классам 0 и 3 существенно больше, чем в остальных классах.
+![](labels.jpg)
 
 ## Project description in English
 The topic of the project is to develop a neural network that will help candidates create a selling resume. We are trying to teach the model to analyze key errors and offer recommendations.
